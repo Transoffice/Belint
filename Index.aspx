@@ -30,7 +30,7 @@
                              <img alt="" width="1" height="7" src="Images/menu-line.gif" />
                         </em>
                         <li class="active">
-                            <a href="Kontakt.aspx"><strong>Kontaktktttt</strong></a>
+                            <a href="Kontakt.aspx"><strong>Kontakt_test</strong></a>
                         </li>
                     </ul>                
                 </div>
