@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RU/RuSiteMaster.master" AutoEventWireup="true" CodeFile="Impressum.aspx.cs" Inherits="RU_Impressum" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GE/GeSiteMaster.master" AutoEventWireup="true"
+    CodeFile="Impressum.aspx.cs" Inherits="GE_Impressum" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />

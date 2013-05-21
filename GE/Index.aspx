@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/EN/EnSiteMaster.master" AutoEventWireup="true"
-    CodeFile="Index.aspx.cs" Inherits="EN_Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GE/GeSiteMaster.master" AutoEventWireup="true"
+    CodeFile="Index.aspx.cs" Inherits="GE_Index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />

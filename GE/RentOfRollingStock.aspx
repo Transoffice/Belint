@@ -1,10 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/EN/EnSiteMaster.master" AutoEventWireup="true"
-    CodeFile="Index.aspx.cs" Inherits="EN_Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GE/GeSiteMaster.master" AutoEventWireup="true"
+    CodeFile="RentOfRollingStock.aspx.cs" Inherits="GE_RentOfRollingStock" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+    <ul class="mainContentMenuItemsSub">
+        <li><a href="FreightForwarding.aspx">&#8594; Spedition</a> </li>
+        <li><a href="ContainerTransport.aspx">&#8594; Containertransport</a> </li>
+        <li style="background: #0859a4 url(../Images/subnav-act.gif) repeat-x left top;"><a
+            style="color: #fdfdfe;" href="RentOfRollingStock.aspx">&#8594; Vermietung von Rollmaterial</a>
+        </li>
+        <li><a href="COCTCost.aspx">&#8594; Berechnen Sie Transportkosten</a> </li>
+    </ul>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <h2>
         Welcome at Belintertrans-Germany GmbH
     </h2>
@@ -32,6 +42,8 @@
         <li>Container transports (Sea containers, Tank containers etc.) from the EU-CIS-China
             on purchase and rental basis </li>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-    <asp:Image ID="Image1" runat="server" ImageUrl="../Images/Train.jpg" />
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="Server">
+    <a href="Index.aspx">Startseite </a>
+    <img src="../Images/nar.gif" alt=""><a href="FreightForwarding.aspx">Services </a>
+    <img src="../Images/nar.gif" alt=""><strong> Vermietung von Rollmaterial</strong>
 </asp:Content>

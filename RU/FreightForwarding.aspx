@@ -1,10 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/EN/EnSiteMaster.master" AutoEventWireup="true"
-    CodeFile="Index.aspx.cs" Inherits="EN_Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RU/RuSiteMaster.master" AutoEventWireup="true" CodeFile="FreightForwarding.aspx.cs" Inherits="RU_FreightForwarding" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+    <ul class="mainContentMenuItemsSub">
+        <li style="background: #0859a4 url(../Images/subnav-act.gif) repeat-x left top;"><a
+            style="color: #fdfdfe;" href="FreightForwarding.aspx">&#8594; Экспедирование грузов</a>
+        </li>
+        <li><a href="ContainerTransport.aspx">&#8594; Контейнерные перевозки</a> </li>
+        <li><a style="text-align:center; padding-right:7px;" href="RentOfRollingStock.aspx">&#8594; Предоставление пользование подвижного состава</a> </li>
+        <li><a href="COCTCost.aspx">&#8594; Расчет стоимости перевозки</a> </li>
+    </ul>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <h2>
         Welcome at Belintertrans-Germany GmbH
     </h2>
@@ -32,6 +41,9 @@
         <li>Container transports (Sea containers, Tank containers etc.) from the EU-CIS-China
             on purchase and rental basis </li>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-    <asp:Image ID="Image1" runat="server" ImageUrl="../Images/Train.jpg" />
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="Server">
+    <a href="Index.aspx">Главная </a>
+    <img src="../Images/nar.gif" alt=""><a href="FreightForwarding.aspx"> Услуги </a>
+    <img src="../Images/nar.gif" alt=""><strong> Экспедирование грузов</strong>
 </asp:Content>
+

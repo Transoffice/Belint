@@ -1,8 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/EN/EnSiteMaster.master" AutoEventWireup="true"
-    CodeFile="Index.aspx.cs" Inherits="EN_Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GE/GeSiteMaster.master" AutoEventWireup="true"
+    CodeFile="About.aspx.cs" Inherits="GE_About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+    <ul class="mainContentMenuItemsSub">
+        <li class="drop"><a href="CompanyCapacities.aspx">&#8594; Unternehmen Kapazitäten</a>
+        </li>
+    </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <h2>
@@ -32,6 +38,8 @@
         <li>Container transports (Sea containers, Tank containers etc.) from the EU-CIS-China
             on purchase and rental basis </li>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-    <asp:Image ID="Image1" runat="server" ImageUrl="../Images/Train.jpg" />
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="Server">
+    <a href="Index.aspx">Startseite </a>
+    <img src="../Images/nar.gif" alt=""><strong> Uber uns</strong>
 </asp:Content>

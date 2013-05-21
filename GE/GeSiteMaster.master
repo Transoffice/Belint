@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeSiteMaster.master.cs"
+    Inherits="GE_GeSiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BELINTERTRANS-GERMANY GmbH</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+    <script src="../Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.cycle.all.latest.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slideshow').cycle({
+                fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="bg-top">
+        <div class="page">
+            <div class="header">
+                <div class="logo">
+                    <a title="BELINTERTRANS-GERMANY GmbH logo" href="Index.aspx">
+                        <img width="450" height="55" alt="BELINTERTRANS" src="../Images/logo-ger.png" />
+                    </a>
+                </div>
+                <div>
+                    <ul class="mainNav">
+                        <li><a href="Index.aspx"><strong>Startseite</strong></a> </li>
+                        <em>
+                            <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                        </em>
+                        <%--<li class="active">
+							<a href="Leistungen.aspx"><strong>Leistungen</strong></a>
+						</li>--%>
+                        <li><a href="ParentCompany.aspx"><strong>Muttergesellschaft</strong></a> </li>
+                        <em>
+                            <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                        </em>
+                        <li><a href="FreightForwarding.aspx"><strong>Services</strong></a> </li>
+                        <em>
+                            <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                        </em>
+                        <li><a href="About.aspx"><strong>Uber uns</strong></a> </li>
+                        <em>
+                            <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                        </em>
+                        <li class="active"><a href="Kontakt.aspx"><strong>Kontakt</strong></a> </li>
+                    </ul>
+                </div>
+                <%--                <div class="mainNav">
+					<asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+						<Items>
+							<asp:MenuItem NavigateUrl="~/Index.aspx" Text="Home" />                     
+						</Items>  
+					</asp:Menu> 
+				</div>--%>
+                <div class="header_content">
+                    <div class="slideshow" style="position: relative;">
+                        <img src="../Images/111.jpg" width="1000" height="219" style="position: absolute;
+                            top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 1000px; height: 219px;">
+                        <img src="../Images/222.jpg" width="1000" height="219" style="position: absolute;
+                            top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 1000px; height: 219px;">
+                        <img src="../Images/333.jpg" width="1000" height="219" style="position: absolute;
+                            top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 1000px; height: 219px;">
+                        <img src="../Images/444.png" width="1000" height="219" style="position: absolute;
+                            top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 1000px; height: 219px;">
+                    </div>
+                </div>
+            </div>
+            <div id="crumb">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%--    <div>
+		<ul id="subNav">
+		</ul>                
+	</div>   --%>
+            <%--        <div class="ko_button">
+			<center>
+				<a href=""><strong>DIREKT ZUM KUNDENOFFICE </strong><img src="Images/arrow_big.png" /></a>
+			</center>
+		</div>     --%>
+            <div id="mainContent">
+                <div class="mainContentMenu">
+                    <div class="mainContentMenuItems">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div class="mainContentText">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="footer">
+                <ul class="footNav">
+                    <li><a href="Index.aspx">Startseite</a> </li>
+                    <em>
+                        <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                    </em>
+                    <%--            <li class="active">
+				<a href="Leistungen.aspx">Leistungen</a>
+			</li>--%>
+                    <%--	<em>
+				<img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+			</em>--%>
+                    <li class="active"><a href="Kontakt.aspx">Kontakt</a> </li>
+                    <em>
+                        <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                    </em>
+                    <li class="active"><a href="Impressum.aspx">Impressum</a> </li>
+                </ul>
+                <!-- footNav -->
+                <ul class="language">
+                    <li><a href="#">Deutsch</a> </li>
+                    <em>
+                        <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                    </em>
+                    <li class="active"><a href="../RU/Index.aspx">Русский</a> </li>
+                    <em>
+                        <img alt="" width="1" height="7" src="../Images/menu-line.gif" />
+                    </em>
+                    <li class="active"><a href="../EN/Index.aspx">English</a> </li>
+                </ul>
+                <!-- language -->
+                <div class="sub_footer_bg">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        <div class="SubFooterLeftContent">
+                            <h2>
+                                Quality and professional approach - our principle of customer service!</h2>
+                            <p>
+                                Careful execution of documentation and professional support awaits You at every
+                                stage of cooperation with us.</p>
+                        </div>
+                        <div class="SubFooterRightContent">
+                            <h2>
+                                Partners</h2>
+                            <br />
+                            <table class="noborder" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="../Images/lietuvos-gelezinkeliai.gif" alt="Укрзализницы">
+                                        </td>
+                                        <td>
+                                            <img src="../Images/ukrzaliznicyi.gif" alt="Укрзализницы" width="192" height="50">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../Images/kazakctan-temir-zolyi.gif" alt="Kazakstan Temir Zolyi" width="171"
+                                                height="50">
+                                        </td>
+                                        <td>
+                                            <img src="../Images/ldz.gif" alt="Latvijas Dzelzcels" width="192" height="52">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <hr />
+                <div class="FooterSign">
+                  Alle Rechte vorbehalten © 2013 JSC Belintertrans-Germany
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

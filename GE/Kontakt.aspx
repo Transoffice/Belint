@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/EN/EnSiteMaster.master" AutoEventWireup="true" CodeFile="Kontakt.aspx.cs" Inherits="EN_Contact" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GE/GeSiteMaster.master" AutoEventWireup="true" CodeFile="Kontakt.aspx.cs" Inherits="GE_Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 	<link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
@@ -33,6 +33,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="Server">
-    <a href="Index.aspx">Home </a><img src="../Images/nar.gif" alt=""><strong> Kontakt</strong>
+    <a href="Index.aspx">Startseite </a><img src="../Images/nar.gif" alt=""><strong> Kontakt</strong>
 </asp:Content>
 

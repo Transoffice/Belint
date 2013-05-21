@@ -5,13 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Belint
+public partial class RU_Kontakt : System.Web.UI.Page
 {
-    public partial class Kontakt : System.Web.UI.Page
+    protected void Page_Load(object sender, EventArgs e)
     {
-        //protected void Page_Load(object sender, EventArgs e)
-        //{
 
-        //}
     }
 }
